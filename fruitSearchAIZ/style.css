@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  /* Add an orange linear-gradient background to the entire page */
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.search-container {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+  /* Add an orange linear-gradient background to the search container */
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  /* Make the input field slightly transparent to show the gradient */
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.suggestions ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.suggestions li {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.suggestions li:hover, .suggestions li.highlight {
+  background-color: #ffcccc; /* Light pink background for hover and highlight */
+}
+
+/* Ensure the highlighting rule is correctly targeting the .highlight class */
+.suggestions li.highlight {
+  background-color: #ffcccc; /* Lighter shade of pink for highlighted suggestion */
+}
+
+/* New rule for highlighting text in pink */
+.suggestions li.highlight {
+  background-color: #d3301a; /* Lighter shade of pink for highlighted suggestion */
+}
